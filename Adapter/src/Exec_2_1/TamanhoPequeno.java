@@ -1,13 +1,12 @@
-package Exec2_1;
+package Exec_2_1;
 
-public class TamanhoMedio extends AbstracaoTamanho {
-
-	public TamanhoMedio(ImplementacaoRefrigerante refrigerante) {
+public class TamanhoPequeno extends AbstracaoTamanho {
+	
+	public TamanhoPequeno(ImplementacaoRefrigerante refrigerante) {
 		super(refrigerante);
 	}
 
 	public void beber() {
-		System.out.println("Toma um gole de " + refrigerante);
 		System.out.println("Toma um gole de " + refrigerante);
 		System.out.println("Acabou o(a) " + refrigerante);
 		System.out.println();
