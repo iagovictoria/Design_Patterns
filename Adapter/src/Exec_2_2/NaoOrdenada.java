@@ -16,8 +16,7 @@ public class NaoOrdenada extends Lista {
 		}
 		
 		public void imprimir() {
-			List<String> listaM = m.marcar(lista);
-			for(String a: listaM) {
+			for(String a: m.marcar(lista)) {
 			System.out.println(a + "\n");
 			}
 		}
