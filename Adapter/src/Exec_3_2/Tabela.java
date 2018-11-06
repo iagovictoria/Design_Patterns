@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Tabela extends ExcelAbs{
 	private String nome;
-	private List<Linha> linhas = new ArrayList<Linha>();
+	private List<ExcelAbs> linhas = new ArrayList<ExcelAbs>();
 
 	public Tabela(String nome) {
 		this.nome = nome;
@@ -13,12 +13,15 @@ public class Tabela extends ExcelAbs{
 	
 	public void imprimir() {
 		System.out.println(nome);
-		for(Linha l: linhas) {
+		for(ExcelAbs l: linhas) {
+			
 			l.imprimir();
+			System.out.println("|");
+			System.out.println("\n");
 		}
 	}
 	
-	public void adicionar(Linha e) {
+	public void adicionar(ExcelAbs e) {
 		linhas.add(e);
 	}
 }

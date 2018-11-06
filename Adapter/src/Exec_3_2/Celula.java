@@ -2,13 +2,14 @@ package Exec_3_2;
 
 public class Celula extends ExcelAbs{
 
-	private String conteudo;
+	private String conteudos;
 
-	public Celula(String conteudo) {
-		this.conteudo = conteudo;
+	public Celula(String conteudos) {
+		this.conteudos = conteudos;
 	}
 
 	public void imprimir() {
+		String conteudo = getConteudo();
 		// Limita o conteúdo a exatamente 15 caracteres.
 		if(conteudo.length() >= 15) {
 		conteudo = conteudo + " ";
@@ -22,7 +23,7 @@ public class Celula extends ExcelAbs{
 	}
 	
 	public String getConteudo() {
-		return conteudo;
+		return conteudos;
 	}
 
 }

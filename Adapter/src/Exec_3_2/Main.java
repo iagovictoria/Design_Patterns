@@ -30,11 +30,7 @@ public class Main {
 		tab1.adicionar(lin2);
 		tab1.adicionar(lin3);
 		
-		//tab1.imprimir();
-		
-		//cel1.imprimir();
-		lin1.imprimir();
-		
+		tab1.imprimir();
 
 	}
 

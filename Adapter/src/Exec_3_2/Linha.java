@@ -5,16 +5,21 @@ import java.util.List;
 
 public class Linha extends ExcelAbs{
 
-	private List<Celula> celulas = new ArrayList<Celula>();
+	private List<ExcelAbs> celulas;
+	
+	public Linha() {
+		celulas = new ArrayList<ExcelAbs>();
+	}
 
 	public void imprimir() {
-		for(Celula c: celulas) {
-			System.out.println(c.getConteudo());
+		for(ExcelAbs c: celulas) {
+			c.imprimir();
 		}		
 	}
 
-	public void adicionar(Celula cel) {
+	public void adicionar(ExcelAbs cel) {
 		celulas.add(cel);
 	}
+	
 
 }
